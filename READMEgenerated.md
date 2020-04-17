@@ -1,8 +1,6 @@
-function generateMarkdown(data) {
-  console.log(data);
-let newstring =`
+
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
-  # ${data.title}
+  # README
   
   ## Table of Contents
   - Description
@@ -13,32 +11,28 @@ let newstring =`
   - Tests
   - Questions
   ## Description
-  ${data.description}
+  Generating README's through prompts
   
   ## Installation
-  ${data.installation}
+  npm i
 
   ## Usage
-  ${data.usage}
+  to make README's more time efficient in future assignments/projects
 
   ## Contributions
-  ${data.contribution}
+  no
 
   ## Tests
-  ${data.tests}
+  nodeJS
 
   ## Questions
-  ${data.questions}
+  no
 
   ### Github
-  ![Github Image](${data.image})  
+  ![Github Image](https://avatars2.githubusercontent.com/u/60833100?v=4)  
 
-  [${data.github}](https://github.com/${data.github})
+  [jngo2013](https://github.com/jngo2013)
 
   ### License
   This project is licensed under the MIT License - see the [LICENSE.md](https://choosealicense.com/licenses/mit/#) 
-  `;
-  return newstring;
-}
-
-module.exports = generateMarkdown;
+  

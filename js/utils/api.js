@@ -1,6 +1,9 @@
 const axios = require("axios");
 const api = {
-  getUser(username) {
+  async getUser(username) {
+const queryUrl = `https://api.github.com/users/${username}`;
+   await axios.get(queryUrl)
+    .then(function(res) {return gitHubImage = res.data.avatar_url});
 
   }
 };

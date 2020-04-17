@@ -1,9 +1,8 @@
-// require inquire and fs
 const inquirer = require("inquirer");
 const fs = require("fs");
-const promise = require("promise");
 const generate = require("./utils/generateMarkdown");
-// const axios = require("axios");
+const api = require ("./utils/api");
+
 //inquirer questions
 inquirer.prompt([
     {
@@ -19,12 +18,12 @@ inquirer.prompt([
     {
         type: "input",
         name: "installation",
-        message: "How to install your packages?"
+        message: "How to install your packages"
     },
     {
         type: "input",
         name: "usage",
-        message: "What is this designed for?"
+        message: "What is this designed for"
     },
     {
         type: "input",
@@ -33,17 +32,26 @@ inquirer.prompt([
     },
     {
         type: "input",
-        name: "github",
-        message: "What is your github username?"
+        name: "tests",
+        message: "What did you use to test your project"
     },
-    
-]).then(answers => {
-    
-    fs.writeFile("README.md",generate(answers),err =>{
+    {
+        type: "input",
+        name: "questions",
+        message: "any questions?"
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "What is your github username"
+    },
+]).then(async answers => {
+    await api.getUser(answers.github);
+    answers.image = gitHubImage
+    fs.writeFile("../READMEgenerated.md",generate(answers),err =>{
     if(err){
         console.log(err);
         throw err 
-
     }
     console.log("success");
     console.log(generate(answers));
