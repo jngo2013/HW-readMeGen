@@ -14,4 +14,9 @@
 - Not too difficult except for retrieving github image.
 - I learned to make a generator to make a README and also more about Mark Downs.
 - I solved the problem by either googling or asking peers for assistance in understanding the areas where I struggled.
-- 
+  
+## Screen shot
+
+ ![ss1](images/ss1.png)
+ ![ss2](images/ss2.png)
+
