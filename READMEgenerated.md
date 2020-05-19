@@ -1,6 +1,6 @@
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
-  # README
+  # readme generator
   
   ## Table of Contents
   - Description
@@ -10,24 +10,24 @@
   - Contributions
   - Tests
   - Questions
-
+  
   ## Description
-  Generating README's through prompts
+  a generator for a readme
   
   ## Installation
   npm i
 
   ## Usage
-  to make README's more time efficient in future assignments/projects
+  for coders to generate a code based on questions given
 
   ## Contributions
   no
 
   ## Tests
-  nodeJS
+  inquirer,fs,axios
 
   ## Questions
-  no
+  If there are any questions, please contact me at jngo2013@gmail.com
 
   ### Github
   ![Github Image](https://avatars2.githubusercontent.com/u/60833100?v=4)  

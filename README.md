@@ -17,6 +17,8 @@
   
 ## Screen shot
 
- ![ss1](images/ss1.png)
- ![ss2](images/ss2.png)
+ ![ss1](/assets/images/ss1.png)
+ ![ss2](/assets/images/ss2.png)
+
+ ![gif](assets/gif/Hw.gif)
 
